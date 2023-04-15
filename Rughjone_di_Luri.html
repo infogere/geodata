@@ -121,7 +121,7 @@
 
 <script>
 Q3D.Config.coord.latlon = true;
-Q3D.Config.localMode = true;
+Q3D.Config.viewpoint = {lookAt:{x:1222668.419140399,y:6220067.536786439,z:0.0},pos:{x:1222164.440514869,y:6213959.693543181,z:5372.146509692979}};
 Q3D.Config.northArrow.enabled = true;
 Q3D.Config.northArrow.color = 0xfdbf6f;
 
@@ -132,7 +132,7 @@ var container = document.getElementById("view"),
 app.init(container);    // initialize viewer
 
 // load the scene
-app.loadSceneFile("./data/Rughjone_di_Luri/scene.js", function (scene) {
+app.loadSceneFile("./data/Rughjone_di_Luri/scene.json", function (scene) {
   // scene file has been loaded
   app.start();
 
