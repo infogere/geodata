@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Ampriani-Zalana-Matra</title>
+<title>Ampriani, Zalana, Matra</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <base target="_blank">
 <link rel="stylesheet" type="text/css" href="./Qgis2threejs.css">
@@ -86,28 +86,18 @@
 <div id="progress"><div id="progressbar"></div></div>
 
 <!-- header and footer -->
-<div id="header"><p>&nbsp;</p>
-<h1 style="text-align: center;"></h1>
-<table style="width: 100%; border-collapse: collapse; background-color: #faebd7;" border="1">
-<tbody>
-<tr>
-<td style="width: 33.3333%; text-align: center;"><strong>Ampriani, Zalana, Matra</strong></td>
-<td style="width: 33.3333%; text-align: center;"><strong>Castagniccia</strong></td>
-<td style="width: 33.3333%; text-align: center;"><strong>Corse</strong></td>
-</tr>
-<tr>
-<td style="width: 33.3333%;"></td>
-<td style="width: 33.3333%;"></td>
-<td style="width: 33.3333%;"></td>
-</tr>
-<tr>
-<td style="width: 33.3333%; text-align: center;">Qgis 3.30</td>
-<td style="text-align: center;">Qgis2threejs 2.7.1</td>
-<td style="width: 33.3333%; text-align: center;">© RG</td>
-</tr>
-</tbody>
-</table></div>
-<div id="footer"></div>
+<div id="header"></div>
+<div id="footer"><table style="position: fixed; left: 100px; bottom: 10px; font-family: Arial Narrow, sans-serif; font-size: 20px; color: #000000;">
+  <tr>
+    <td style="padding: 10px;">Ampriani, Zalana, Matra</td>
+    <td style="padding: 10px;">Corse</td>
+    <td style="padding: 10px;"><a href="https://www.qgis.org/fr/site/"><img src="qgis.png" alt="qgis" width="20" height="21"/>    
+    <td style="padding: 10px;"><a href="https://qgis2threejs.readthedocs.io/en/docs/index.html"><img src="Qgis2threejs.png" alt="qgis2threejs" width="20" height="21"/>
+    <td style="padding: 10px;">© RG</td>
+    <td style="padding: 10px;"><a href="https://twitter.com/infogere"><img src="twitter.png" alt="infogere sur github" width="20" height="21"/>
+  </tr>
+</table>
+</div>
 
 <!-- animation -->
 <div id="narrativebox" class="ef1">
@@ -118,7 +108,7 @@
 </div>
 
 <script>
-Q3D.Config.viewpoint = {lookAt:{x:1227071.5000000014,y:6149325.100000003,z:0.0},pos:{x:1227071.5000000014,y:6146212.596704565,z:3112.503295437951}};
+Q3D.Config.viewpoint = {lookAt:{x:1227071.5000000014,y:6149325.100000003,z:0.0},pos:{x:1227071.5000000014,y:6145876.342885945,z:3448.7571140587083}};
 Q3D.Config.northArrow.enabled = true;
 Q3D.Config.northArrow.color = 0x666666;
 
@@ -129,7 +119,7 @@ var container = document.getElementById("view"),
 app.init(container);    // initialize viewer
 
 // load the scene
-app.loadSceneFile("./data/amzama/scene.json", function (scene) {
+app.loadSceneFile("./data/index/scene.json", function (scene) {
   // scene file has been loaded
   app.start();
 
